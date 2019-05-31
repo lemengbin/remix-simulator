@@ -24,10 +24,10 @@
     "express": "^4.16.3",
     "fast-async": "^6.3.7",
     "merge": "^1.2.0",
-    "remix-lib": "0.3.13-jsvm2.5.0-2",
+    "remix-lib": "git+https://github.com/lemengbin/remix-lib.git#0.3.13-jsvm2.5.0-2",
     "standard": "^10.0.3",
     "time-stamp": "^2.0.0",
-    "web3": "1.0.0-beta.27"
+    "web3": "git+https://github.com/lemengbin/web3.git#1.0.0-beta.27"
   },
   "scripts": {
     "test": "standard && mocha test/"
