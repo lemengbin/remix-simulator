@@ -5,13 +5,13 @@ var Accounts = function () {
   // TODO: make it random and/or use remix-libs
   this.accounts = [this.web3.eth.accounts.create(['abcd']), this.web3.eth.accounts.create(['ef12']), this.web3.eth.accounts.create(['ef34'])]
 
-  this.accounts[this.accounts[0].address.toLowerCase()] = this.accounts[0]
-  this.accounts[this.accounts[1].address.toLowerCase()] = this.accounts[1]
-  this.accounts[this.accounts[2].address.toLowerCase()] = this.accounts[2]
+  this.accounts[this.accounts[0].address] = this.accounts[0]
+  this.accounts[this.accounts[1].address] = this.accounts[1]
+  this.accounts[this.accounts[2].address] = this.accounts[2]
 
-  this.accounts[this.accounts[0].address.toLowerCase()].privateKey = Buffer.from(this.accounts[this.accounts[0].address.toLowerCase()].privateKey.slice(2), 'hex')
-  this.accounts[this.accounts[1].address.toLowerCase()].privateKey = Buffer.from(this.accounts[this.accounts[1].address.toLowerCase()].privateKey.slice(2), 'hex')
-  this.accounts[this.accounts[2].address.toLowerCase()].privateKey = Buffer.from(this.accounts[this.accounts[2].address.toLowerCase()].privateKey.slice(2), 'hex')
+  this.accounts[this.accounts[0].address].privateKey = Buffer.from(this.accounts[this.accounts[0].address].privateKey.slice(2), 'hex')
+  this.accounts[this.accounts[1].address].privateKey = Buffer.from(this.accounts[this.accounts[1].address].privateKey.slice(2), 'hex')
+  this.accounts[this.accounts[2].address].privateKey = Buffer.from(this.accounts[this.accounts[2].address].privateKey.slice(2), 'hex')
 }
 
 Accounts.prototype.methods = function () {
